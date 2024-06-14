@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>karlmagnus.no</title>
+  </head>
+  <style>
+    body {
+      margin: 8px auto;
+      white-space: pre-wrap;
+      font-family: Courier, monospace;
+      max-width: 352px;
+      font-size: 13px;
+      --bg: white;
+      --fg: black;
+      --red: red;
+      --blue: blue;
+      --green: green;
+      --gray: gray;
+      --dark-gold: #bfa100;
+      --brown: #4a2d30;
+      --odd-row: #f0f0f0;
+
+      background-color: var(--bg);
+      color: var(--fg);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        --bg: #101010;
+        --fg: white;
+        --red: #ff5050;
+        --blue: #9090ff;
+        --green: #50da50;
+        --gray: gray;
+        --brown: #745c5f;
+        --odd-row: #202020;
+      }
+    }
+
+    body.light {
+      --bg: white;
+      --fg: black;
+      --red: red;
+      --blue: blue;
+      --green: green;
+      --gray: gray;
+      --brown: #4a2d30;
+      --odd-row: #f0f0f0;
+    }
+
+    body.dark {
+      --bg: #101010;
+      --fg: white;
+      --red: #ff5050;
+      --blue: #9090ff;
+      --green: #50da50;
+      --gray: gray;
+      --brown: #745c5f;
+      --odd-row: #202020;
+    }
+
+    /* Subset of Tailwind styles */
+    .container {
+      width: 100%;
+    }
+
+    .flex {
+      display: flex;
+    }
+    .grid {
+      display: grid;
+    }
+    .hidden {
+      display: none;
+    }
+    .invisible {
+      visibility: hidden;
+    }
+    .inline-block {
+      display: inline-block;
+    }
+
+    .sticky {
+      position: sticky;
+    }
+    .-top-0 {
+      top: 0px;
+    }
+
+    .flex-1 {
+      flex: 1 1 0px;
+    }
+    .flex-initial {
+      flex: 0 1 initial;
+    }
+    .flex-col {
+      flex-direction: column;
+    }
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .flex-none {
+      flex: none;
+    }
+    .justify-between {
+      justify-content: space-between;
+    }
+    .justify-evenly {
+      justify-content: space-evenly;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+    .justify-items-center {
+      justify-items: center;
+    }
+    .items-center {
+      align-items: center;
+    }
+    .items-start {
+      align-items: flex-start;
+    }
+    .items-end {
+      align-items: flex-end;
+    }
+    .self-start {
+      align-self: start;
+    }
+    .self-center {
+      align-self: center;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+    .text-right {
+      text-align: right;
+    }
+    .whitespace-pre-wrap {
+      white-space: pre-wrap;
+    }
+    .italic {
+      font-style: italic;
+    }
+    .font-bold {
+      font-weight: bold;
+    }
+    .no-underline {
+      text-decoration: none;
+    }
+
+    .text-fg {
+      color: var(--fg);
+    }
+    .text-red {
+      color: var(--red);
+    }
+    .text-blue {
+      color: var(--blue);
+    }
+    .text-green {
+      color: var(--green);
+    }
+    .text-gray {
+      color: var(--gray);
+    }
+    .text-dark-gold {
+      color: var(--dark-gold);
+    }
+    .text-brown {
+      color: var(--brown);
+    }
+
+    .text-away {
+      color: var(--away-color);
+    }
+    .text-home {
+      color: var(--home-color);
+    }
+
+    .bg-bg {
+      background-color: var(--bg);
+    }
+    .bg-odd {
+      background-color: var(--odd-row);
+    }
+
+    .cursor-pointer {
+      cursor: pointer;
+    }
+
+    /* Teeny-tiny component-like styles */
+    .nav {
+      color: var(--blue);
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    label.toggle-on,
+    label.toggle-off {
+      cursor: pointer;
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+    input[type="checkbox"]:checked ~ .toggle-on {
+      display: none;
+    }
+    input[type="checkbox"]:not(:checked) ~ .toggle-off {
+      display: none;
+    }
+    .toggle-on,
+    .toggle-off {
+      color: var(--blue);
+    }
+
+    .champion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .text-cc {
+      color: #b66941;
+    }
+  </style>
+  <body>
+    <p class="font-bold">Jeg lager ting på internett</p>
+    <p>Ofte mer avansert på dette</p>
+    <p>Hvis du vil ha tak i meg kan du kontakte meg på <a href="mailto:hei@karlmagnus.no">epost</a>.</p>
+  </body>
+</html>
