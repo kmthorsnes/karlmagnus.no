@@ -5,7 +5,7 @@ function App() {
     <>
       <h1>Hei!👋🏼️Jeg lager internett-ting</h1>
       <p className="read-the-docs">
-        Send meg en <a href="mailto:hei@karlmagnus.no">epost</a>{" "}
+        Send meg en <a href="mailto:hei@karlmagnus.no">epost 📧️</a>{" "}
       </p>
     </>
   );
