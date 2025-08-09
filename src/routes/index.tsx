@@ -12,9 +12,9 @@ function App() {
         <p className="">
           Send meg en <a href="mailto:hei@karlmagnus.no">epost</a>{' '}
         </p>
-        <p>
+        {/* <p>
           Eller les om ting jeg <Link to="/liker">liker</Link>
-        </p>
+        </p> */}
       </main>
     </div>
   )
