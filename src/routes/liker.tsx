@@ -5,5 +5,5 @@ export const Route = createFileRoute('/liker')({
 })
 
 function RouteComponent() {
-  return <div>Dette er en liste over ting jeg liker</div>
+  return <div>Dette er en liste over ting jeg liker:</div>
 }
