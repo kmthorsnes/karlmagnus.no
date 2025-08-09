@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as LikerRouteImport } from './routes/liker'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as DemoTableRouteImport } from './routes/demo.table'
 
 const LikerRoute = LikerRouteImport.update({
   id: '/liker',
@@ -22,31 +23,40 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DemoTableRoute = DemoTableRouteImport.update({
+  id: '/demo/table',
+  path: '/demo/table',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/liker': typeof LikerRoute
+  '/demo/table': typeof DemoTableRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/liker': typeof LikerRoute
+  '/demo/table': typeof DemoTableRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/liker': typeof LikerRoute
+  '/demo/table': typeof DemoTableRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/liker'
+  fullPaths: '/' | '/liker' | '/demo/table'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/liker'
-  id: '__root__' | '/' | '/liker'
+  to: '/' | '/liker' | '/demo/table'
+  id: '__root__' | '/' | '/liker' | '/demo/table'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   LikerRoute: typeof LikerRoute
+  DemoTableRoute: typeof DemoTableRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +75,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/demo/table': {
+      id: '/demo/table'
+      path: '/demo/table'
+      fullPath: '/demo/table'
+      preLoaderRoute: typeof DemoTableRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   LikerRoute: LikerRoute,
+  DemoTableRoute: DemoTableRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
