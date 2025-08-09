@@ -135,4 +135,9 @@ code {
   body {
     @apply bg-background text-foreground;
   }
+  /* Global lenke-styling */
+  a,
+  a:any-link {
+    @apply text-blue-500 underline hover:text-blue-700 transition-colors;
+  }
 }
