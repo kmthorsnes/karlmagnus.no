@@ -1,0 +1,139 @@
+{
+  "hash": "aa9a6630",
+  "configHash": "f433c77f",
+  "lockfileHash": "97667921",
+  "browserHash": "5fa471b1",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/.pnpm/react@19.1.1/node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "69592310",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/.pnpm/react@19.1.1/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "ba67f3bf",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/.pnpm/react-dom@19.1.1_react@19.1.1/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6ad6efe5",
+      "needsInterop": true
+    },
+    "@tanstack/react-router": {
+      "src": "../../node_modules/.pnpm/@tanstack+react-router@1.131.2_react-dom@19.1.1_react@19.1.1__react@19.1.1/node_modules/@tanstack/react-router/dist/esm/index.js",
+      "file": "@tanstack_react-router.js",
+      "fileHash": "826b7bb1",
+      "needsInterop": false
+    },
+    "web-vitals": {
+      "src": "../../node_modules/.pnpm/web-vitals@4.2.4/node_modules/web-vitals/dist/web-vitals.js",
+      "file": "web-vitals.js",
+      "fileHash": "804d1df7",
+      "needsInterop": false
+    },
+    "@tanstack/react-query": {
+      "src": "../../node_modules/.pnpm/@tanstack+react-query@5.84.2_react@19.1.1/node_modules/@tanstack/react-query/build/modern/index.js",
+      "file": "@tanstack_react-query.js",
+      "fileHash": "8cde197d",
+      "needsInterop": false
+    },
+    "zod": {
+      "src": "../../node_modules/.pnpm/zod@3.25.76/node_modules/zod/index.js",
+      "file": "zod.js",
+      "fileHash": "bd21283f",
+      "needsInterop": false
+    },
+    "@tanstack/react-router-devtools": {
+      "src": "../../node_modules/.pnpm/@tanstack+react-router-devtools@1.131.2_@tanstack+react-router@1.131.2_react-dom@19.1.1_d1dcbe5de9fd51872dc4923567a1e079/node_modules/@tanstack/react-router-devtools/dist/esm/index.js",
+      "file": "@tanstack_react-router-devtools.js",
+      "fileHash": "75d48935",
+      "needsInterop": false
+    },
+    "@tanstack/react-table": {
+      "src": "../../node_modules/.pnpm/@tanstack+react-table@8.21.3_react-dom@19.1.1_react@19.1.1__react@19.1.1/node_modules/@tanstack/react-table/build/lib/index.mjs",
+      "file": "@tanstack_react-table.js",
+      "fileHash": "7dd59cee",
+      "needsInterop": false
+    },
+    "@tanstack/match-sorter-utils": {
+      "src": "../../node_modules/.pnpm/@tanstack+match-sorter-utils@8.19.4/node_modules/@tanstack/match-sorter-utils/build/lib/index.mjs",
+      "file": "@tanstack_match-sorter-utils.js",
+      "fileHash": "4cb9e474",
+      "needsInterop": false
+    },
+    "@tanstack/react-query-devtools": {
+      "src": "../../node_modules/.pnpm/@tanstack+react-query-devtools@5.84.2_@tanstack+react-query@5.84.2_react@19.1.1__react@19.1.1/node_modules/@tanstack/react-query-devtools/build/modern/index.js",
+      "file": "@tanstack_react-query-devtools.js",
+      "fileHash": "1c1bcf54",
+      "needsInterop": false
+    },
+    "@tanstack/react-form": {
+      "src": "../../node_modules/.pnpm/@tanstack+react-form@1.19.0_react-dom@19.1.1_react@19.1.1__react@19.1.1/node_modules/@tanstack/react-form/dist/esm/index.js",
+      "file": "@tanstack_react-form.js",
+      "fileHash": "c4b73afb",
+      "needsInterop": false
+    },
+    "@faker-js/faker": {
+      "src": "../../node_modules/.pnpm/@faker-js+faker@9.9.0/node_modules/@faker-js/faker/dist/index.js",
+      "file": "@faker-js_faker.js",
+      "fileHash": "2614427e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "RN252AT2-OT5CLZOK": {
+      "file": "RN252AT2-OT5CLZOK.js"
+    },
+    "BaseTanStackRouterDevtoolsPanel-EYO6HZBZ": {
+      "file": "BaseTanStackRouterDevtoolsPanel-EYO6HZBZ.js"
+    },
+    "FloatingTanStackRouterDevtools-IMS572OK": {
+      "file": "FloatingTanStackRouterDevtools-IMS572OK.js"
+    },
+    "chunk-YWMBLU6V": {
+      "file": "chunk-YWMBLU6V.js"
+    },
+    "EDEL3XIZ-X6KD7J5X": {
+      "file": "EDEL3XIZ-X6KD7J5X.js"
+    },
+    "chunk-6RINDW2W": {
+      "file": "chunk-6RINDW2W.js"
+    },
+    "chunk-3M5BAPFW": {
+      "file": "chunk-3M5BAPFW.js"
+    },
+    "chunk-EFGPT2JO": {
+      "file": "chunk-EFGPT2JO.js"
+    },
+    "chunk-RWSSKI2A": {
+      "file": "chunk-RWSSKI2A.js"
+    },
+    "chunk-UL3SIRNW": {
+      "file": "chunk-UL3SIRNW.js"
+    },
+    "chunk-472FLE3U": {
+      "file": "chunk-472FLE3U.js"
+    },
+    "chunk-P3HS7KVR": {
+      "file": "chunk-P3HS7KVR.js"
+    },
+    "chunk-JCLDUJEF": {
+      "file": "chunk-JCLDUJEF.js"
+    },
+    "chunk-JC6BUL45": {
+      "file": "chunk-JC6BUL45.js"
+    },
+    "chunk-27F4CQET": {
+      "file": "chunk-27F4CQET.js"
+    },
+    "chunk-YFF3FIXT": {
+      "file": "chunk-YFF3FIXT.js"
+    },
+    "chunk-WOOG5QLI": {
+      "file": "chunk-WOOG5QLI.js"
+    }
+  }
+}
