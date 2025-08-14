@@ -6,11 +6,12 @@ export const Route = createFileRoute('/liker')({
 
 function RouteComponent() {
   return (
-    <div className="text-center">
+    <div className="text-center [view-transition-name:main-content]">
       <main className="min-h-screen flex flex-col items-center justify-center bg-[#282c34] text-white text-[calc(10px+2vmin)]">
-        <h1>Dette er ting jeg liker</h1>
+        <h1>Kule verktøy jeg liker</h1>
         <ul className="list-disc">
-          <li>Kaffe</li>
+          <li>Alfred</li>
+          <li>Finicky</li>
         </ul>
       </main>
     </div>
