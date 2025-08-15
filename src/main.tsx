@@ -28,10 +28,19 @@ const router = createRouter({
       let direction = 'none'
 
       if (fromLocation) {
-        const fromIndex = fromLocation.state.__TSR_index
-        const toIndex = toLocation.state.__TSR_index
-
-        direction = fromIndex > toIndex ? 'right' : 'left'
+        const fromPath = fromLocation.pathname
+        const toPath = toLocation.pathname
+        
+        // Definer rute-hierarki: / < /liker < /demo/table
+        const routeOrder = ['/', '/liker', '/demo/table']
+        const fromIndex = routeOrder.indexOf(fromPath)
+        const toIndex = routeOrder.indexOf(toPath)
+        
+        if (fromIndex !== -1 && toIndex !== -1) {
+          // Hvis vi går fremover i hierarkiet: slide left (inn fra høyre)
+          // Hvis vi går bakover i hierarkiet: slide right (inn fra venstre)
+          direction = fromIndex < toIndex ? 'left' : 'right'
+        }
       }
 
       return [`slide-${direction}`]
