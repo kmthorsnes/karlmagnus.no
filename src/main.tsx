@@ -1,14 +1,14 @@
+import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createRouter } from '@tanstack/react-router'
 
 import * as TanStackQueryProvider from './integrations/tanstack-query/root-provider.tsx'
 
 // Import the generated route tree
 import { routeTree } from './routeTree.gen'
 
-import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
+import './styles.css'
 
 // Create a new router instance
 
@@ -30,12 +30,12 @@ const router = createRouter({
       if (fromLocation) {
         const fromPath = fromLocation.pathname
         const toPath = toLocation.pathname
-        
+
         // Definer rute-hierarki: / < /liker < /demo/table
-        const routeOrder = ['/', '/liker', '/demo/table']
+        const routeOrder = ['/', '/liker']
         const fromIndex = routeOrder.indexOf(fromPath)
         const toIndex = routeOrder.indexOf(toPath)
-        
+
         if (fromIndex !== -1 && toIndex !== -1) {
           // Hvis vi går fremover i hierarkiet: slide left (inn fra høyre)
           // Hvis vi går bakover i hierarkiet: slide right (inn fra venstre)

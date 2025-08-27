@@ -30,22 +30,16 @@ function RootComponent() {
       switch (event.key) {
         case 'ArrowRight': {
           event.preventDefault()
-          // Naviger til neste side (fra / til /liker, fra /liker til /demo/table)
           const currentPath = router.state.location.pathname
           if (currentPath === '/') {
             router.navigate({ to: '/liker' })
-          } else if (currentPath === '/liker') {
-            router.navigate({ to: '/demo/table' })
           }
           break
         }
         case 'ArrowLeft': {
           event.preventDefault()
-          // Naviger til forrige side (fra /demo/table til /liker, fra /liker til /)
           const currentPathLeft = router.state.location.pathname
-          if (currentPathLeft === '/demo/table') {
-            router.navigate({ to: '/liker' })
-          } else if (currentPathLeft === '/liker') {
+          if (currentPathLeft === '/liker') {
             router.navigate({ to: '/' })
           }
           break
