@@ -1,6 +1,6 @@
 // Opprinnelig i routes mappa, men flyttet til components for å ikke bli rendret
 import { compareItems, rankItem } from '@tanstack/match-sorter-utils'
-import { createFileRoute } from '@tanstack/react-router'
+// import { createFileRoute } from '@tanstack/react-router'
 import {
   flexRender,
   getCoreRowModel,
